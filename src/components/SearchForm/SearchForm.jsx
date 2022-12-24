@@ -1,9 +1,15 @@
 import { FiSearch } from 'react-icons/fi';
 import { BtnSearch, Select, SearchFormStyled } from './SearchForm.styled';
 
-export const SearchForm = () => {
+export const SearchForm = ({ onSubmit }) => {
+  const handleSubmit = event => {
+    event.preventDefault();
+    const query = event.target.elements.region.value;
+    onSubmit(query)
+    event.target.reset()
+  };
   return (
-    <SearchFormStyled>
+    <SearchFormStyled onSubmit={handleSubmit}>
       <BtnSearch type="submit">
         <FiSearch size="16px" />
       </BtnSearch>
