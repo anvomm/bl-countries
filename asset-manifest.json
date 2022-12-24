@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bl-countries/static/css/main.17654e45.css",
+    "main.js": "/bl-countries/static/js/main.d63b452e.js",
+    "index.html": "/bl-countries/index.html",
+    "main.17654e45.css.map": "/bl-countries/static/css/main.17654e45.css.map",
+    "main.d63b452e.js.map": "/bl-countries/static/js/main.d63b452e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17654e45.css",
+    "static/js/main.d63b452e.js"
+  ]
+}
