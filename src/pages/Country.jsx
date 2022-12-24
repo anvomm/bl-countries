@@ -5,10 +5,13 @@ import { fetchCountry } from 'service/country-service';
 
 export const Country = () => {
   const [country, setCountry] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
   const { countryId } = useParams();
   useEffect(() => {
+    setIsLoading(true);
     fetchCountry(countryId).then(country => {
       setCountry(country);
+      setIsLoading(false);
     });
   }, [countryId]);
 
@@ -18,6 +21,7 @@ export const Country = () => {
   return (
     <Section>
       <Container>
+        {isLoading && <Loader />}
         <div
           style={{
             marginBottom: '60px',
