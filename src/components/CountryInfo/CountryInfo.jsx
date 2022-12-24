@@ -10,12 +10,12 @@ import {
 } from './CountryInfo.styled';
 
 export const CountryInfo = ({
-  data: { flag, capital, country, id, languages = [], population },
+  data: { flag, capital, countryName, id, languages = [], population },
 }) => {
   return (
     <CountryWrapper key={id}>
       <Flag>
-        <Image src={flag} alt={country} />
+        <Image src={flag} alt={countryName} />
       </Flag>
       <CountryDescription>
         <CountryCapital>
@@ -23,7 +23,7 @@ export const CountryInfo = ({
         </CountryCapital>
 
         <CountryTitle>
-          {country === 'Russian Federation' ? 'MORDOR' : country}
+          {countryName === 'Russian Federation' ? 'MORDOR' : countryName}
         </CountryTitle>
 
         <CountryDetail>
