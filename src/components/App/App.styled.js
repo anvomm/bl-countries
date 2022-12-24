@@ -34,7 +34,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Heading = styled.h2`
+/* export const Heading = styled.h2`
   font-size: ${props => props.theme.fontSizes.medium};
   font-weight: 700;
   color: ${props => props.theme.colors.white};
@@ -51,7 +51,7 @@ export const Heading = styled.h2`
   @media (min-width: ${props => props.theme.breakpoints.l}) {
     font-size: ${props => props.theme.fontSizes.xxl};
   }
-`;
+`; */
 
 export const Text = styled.p`
   font-size: ${props => props.theme.fontSizes.small};
